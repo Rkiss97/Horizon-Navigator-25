@@ -14,7 +14,6 @@ OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # --- LOAD PDFS ---
-@st.cache_resource
 def load_pdfs(folder_path="docs"):
     all_pages = []
     for filename in os.listdir(folder_path):
