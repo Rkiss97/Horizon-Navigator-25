@@ -29,7 +29,7 @@ if user_question:
         docs = vectorstore.similarity_search(user_question, k=3)
 
         # Load QA chain and generate a response
-        chain = load_qa_chain(OpenAI(temperature=0), chain_type="stuff")
+        chain = load_qa_chain(OpenAI(model_name="gpt-4-1106-preview", temperature=0), chain_type="stuff")
         response = chain.run(input_documents=docs, question=user_question)
 
         # Display the answer
