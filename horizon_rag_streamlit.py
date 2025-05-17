@@ -11,7 +11,7 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Configure the Streamlit app layout
 st.set_page_config(page_title="Horizon Navigator 2025", layout="wide")
-st.title("Horizon Navigator WP2025 by poltextLAB")
+st.title("Horizon Europe Navigator WP2025 by poltextLAB")
 st.markdown("An AI-powered assistant for exploring Horizon Europe 2025 calls, rules, and funding conditions — straight from the official work programme documents.")
 
 # Text input field for user questions
