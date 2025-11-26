@@ -52,7 +52,7 @@ if user_question:
 
         # LLM + dokumentum-chain (ez váltja ki a load_qa_chain-t)
         llm = ChatOpenAI(
-            model="gpt-5.1",  # vagy cseréld arra a modellnévre, amihez van hozzáférésed
+            model="gpt-5", 
             temperature=0,
         )
 
